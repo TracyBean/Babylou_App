@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block body %}
+
+    <h2>Pictures</h2>
+    
+<img src="/static/pictures/baby2copy.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;"><img src="/static/pictures/chitowntrain.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;"><img src="/static/pictures/anonymousgirlinmexico.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right:3px;"><img src="/static/pictures/natoprotest.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;" >
+<img src="/static/pictures/baby3 copy.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;"><img src="/static/pictures/trotskymuseum copy.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;"><img src="/static/pictures/winthropbeach.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right:3px;">
+<img src="/static/pictures/viewfromwillistower.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;"><img src="/static/pictures/coyoacon2.jpg" style="width: 240px; float: left; margin-bottom: 15px; margin-right: 3px;">
+
+
+ 
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            Results:
+            <pre>
+                {% for message in messages %}
+{{ message }}
+                {% endfor %}
+            </pre>
+        {% endif %}
+    {% endwith %}
+   
+{% endblock %}
+{% block nav %}
+{% endblock %}
