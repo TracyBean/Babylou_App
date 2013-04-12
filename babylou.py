@@ -42,6 +42,6 @@ app.add_url_rule('/pictures/',
 def page_not_found(error):
 	return flask.render_template('404.html'), 404
 
-app.debug = True
-app.run()
+ app.debug = True
+ app.run()
 
